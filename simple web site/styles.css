@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+body {
+    background-color: #333;
+    color: white;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 100vh;     /*화면 최대 높이*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 1.2rem 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+header>p {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+header>ul {
+    display: flex;
+    
+}
+
+header>ul>li {
+
+    list-style-type: none;
+    margin-left: 1.5rem;
+    
+}
+
+header>ul>li>a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 5px;
+    color: grey;
+    
+}
+
+
+
+header>ul>li:first-of-type>a{
+    border-bottom: 5px solid white;
+    color: white;
+}
+
+
+section {
+    text-align: center;
+    padding: 0 3rem;
+
+}
+
+section>p {
+    margin-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section>p:first-child {
+    font-size: 2rem;
+    font-weight: 750;
+
+}
+
+header>ul>li>a:hover {
+    border-bottom: 5px solid grey;
+}
+
+@media screen and (max-width:600px) {
+    header {
+        flex-direction: column;
+    }
+
+    header> ul>li {
+        margin-top: 20px;
+    }
+}
+
+section>p:last-of-type {
+    font-size: 1.2rem;
+    font-weight: 230;
+
+}
+
+section>a {
+    display: block;
+    border: 1px solid white;
+    width: 150px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+}
+
+section>a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.8s;
+}
+
+
+footer {
+    color: grey;
+}
